@@ -33,12 +33,15 @@ int partition(int *array, int l, int r, size_t size)
 		{
 			smaller++;
 			if (i != smaller)
-				swap(&array[smaller], &array[i]), print_array(array, size);
+				swap(&array[smaller], &array[i]),
+				print_array(array, size);
 		}
 	}
 
 	swap(&array[smaller + 1], &array[r]);
-	print_array(array, size);
+
+	if (array[smaller + 1] != array[r])
+		print_array(array, size);
 
 	return (smaller + 1);
 }
