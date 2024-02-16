@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "sort.h"
 
+/**
+ * bubble_sort - bubble sort algorithm
+ * @array: array to be sorted
+ * @size: size of arr
+ * Return: nothing
+ */
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j, temp, swap;
