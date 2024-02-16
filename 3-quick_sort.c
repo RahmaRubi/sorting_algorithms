@@ -61,6 +61,7 @@ void quick_sort_rec(int *array, int l, int r, size_t size)
 	}
 }
 
+
 /**
 * quick_sort - array sorting
 * @array: array
